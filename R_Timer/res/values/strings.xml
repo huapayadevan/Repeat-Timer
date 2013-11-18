@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">RepeatTimer</string>
+    <string name="action_settings">Settings</string>
+    <string name="timerValueLabel">Main Timer:</string>
+    <string name="inBetweenTimerValueLabel">In Between:</string>
+    <string name="startButton">Start Button</string>
+    <string name="title_activity_timer">Timer</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="pause">Pause</string>
+    <string name="dummy_content">00</string>
+    <string name="pauseButton">Pause Button</string>
+    <string name="stopButton">Stop Button</string>
+    <string name="hello_world">Hello world!</string>
+
+</resources>

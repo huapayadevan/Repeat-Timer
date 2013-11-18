@@ -1,0 +1,103 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@drawable/minimal23"
+    
+        android:textColor="#FFF"
+    tools:context=".MainActivity" >
+
+  
+    <TextView
+        android:id="@+id/appNameLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:text="@string/app_name"
+        android:textColor="#FFF"
+        android:textSize="50sp" />
+
+    <LinearLayout
+        android:id="@+id/inputWrapper"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/timerValueLabel"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="1"
+                android:text="@string/timerValueLabel"
+                android:textColor="#FFF"
+                android:textAppearance="?android:attr/textAppearanceLargeInverse" />
+
+            <EditText
+                android:id="@+id/mainTimerInput"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" 
+               	android:inputType="number">
+
+                <requestFocus />
+            </EditText>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/inBetweenTimerValueLabel"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/inBetweenTimerValueLabel"
+        		android:textColor="#FFF"
+                android:textAppearance="?android:attr/textAppearanceLargeInverse" />
+
+            <EditText
+                android:id="@+id/inBetweenTimerInput"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:inputType="number" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <ImageButton
+        android:id="@+id/startButton"
+        android:contentDescription="@string/startButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+		android:layout_below="@+id/inputWrapper"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="14dp"
+        android:onClick="startButtonClick"
+        android:src="@android:drawable/ic_media_play" />
+
+<!--     <Switch -->
+<!--         android:id="@+id/timerSwitch" -->
+<!--         android:layout_width="wrap_content" -->
+<!--         android:layout_height="wrap_content" -->
+<!--         android:layout_above="@+id/inputWrapper" -->
+<!--         android:layout_marginBottom="30dp" -->
+<!--         android:layout_centerHorizontal="true" -->
+<!--         android:textOff="Seconds" -->
+<!--         android:textOn="Minutes" -->
+<!--         android:onClick="onSwitchClick" -->
+<!--         android:textSize="30sp"/> -->
+
+</RelativeLayout>
